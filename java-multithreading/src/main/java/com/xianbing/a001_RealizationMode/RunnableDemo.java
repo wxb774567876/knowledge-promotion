@@ -28,6 +28,7 @@ public class RunnableDemo {
         thread1.start();
         thread2.start();
         thread3.start();
+        System.out.println("我先执行完了！！！");
     }
 }
 
