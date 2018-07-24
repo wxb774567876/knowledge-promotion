@@ -1,3 +1,6 @@
+/bin/
+classes/
+.classpath
 .idea
 .classpath
 .project
