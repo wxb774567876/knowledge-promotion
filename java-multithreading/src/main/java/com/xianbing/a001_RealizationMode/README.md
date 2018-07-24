@@ -1,10 +1,11 @@
 知识点一、Java中线程实现的方式主要包含下面两种
-1.实现 Runnable 接口
 
-2.继承Thread类
+1.实现Runnable接口，并重写该接口的run()方法，该run()方法同样是线程执行体，创建Runnable实现类的实例，并以此实例作为Thread类的target
+来创建Thread对象，该Thread对象才是真正的线程对象。
+2.继承Thread类，重写该类的run()方法。
+3.使用Callable和Future接口创建线程。具体是创建Callable接口的实现类，并实现clall()方法。并使用FutureTask类来包装Callable实现类的对象，
+且以此FutureTask对象作为Thread对象的target来创建线程。
 
-在java中要想实现多线程，有两种手段，一种是继续Thread类，另外一种是实现Runable接口.(其实准确来讲，应该有三种，还有一种是实现Callable接口，
-并与Future、线程池结合使用
 
 知识点二：线程的状态变化
 要想实现多线程，必须在主线程中创建新的线程对象。任何线程一般具有5种状态，即创建，就绪，运行，阻塞，终止。下面分别介绍一下这几种状态：
