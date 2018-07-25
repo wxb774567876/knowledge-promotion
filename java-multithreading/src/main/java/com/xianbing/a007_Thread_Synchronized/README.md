@@ -24,3 +24,7 @@ A．无论synchronized关键字加在方法上还是对象上，它取得的锁�
 B．每个对象只有一个锁（lock）与之相关联。
 
 C．实现同步是要很大的系统开销作为代价的，甚至可能造成死锁，所以尽量避免无谓的同步控制。
+
+帮助理解的两个博客：
+https://blog.csdn.net/pengdandezhi/article/details/66475814
+https://www.cnblogs.com/moongeek/p/7631447.html
