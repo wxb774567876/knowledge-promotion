@@ -34,7 +34,7 @@ public class CallableDemo {
                 thread.start();
             }
         }
-        System.out.println("主线程运行完毕");
+
         try {
             int sum = futureTask.get();
             System.out.println("sum=" + sum);
@@ -43,5 +43,7 @@ public class CallableDemo {
         } catch (ExecutionException e) {
             e.printStackTrace();
         }
+
+        System.out.println("主线程运行完毕");
     }
 }
