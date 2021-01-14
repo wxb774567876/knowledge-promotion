@@ -9,9 +9,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>java-multithreading</artifactId>
+    <artifactId>java-log4j</artifactId>
 
-    <name>java-multithreading</name>
+    <name>java-log4j</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
 
